@@ -1,0 +1,55 @@
+source.path: C:\Users\thminh_1\Workspace\Library\WSO2
+addons:
+    products[am310]:
+        zipName: wso2am-3.1.0
+        sourceDir: C:\Users\thminh_1\Workspace\Library\WSO2\wso2addons
+        mapTos[0].source: ${addons.products[am310].sourceDir}/wso2server.bat
+        mapTos[0].destination: /bin/wso2server.bat
+        mapTos[1].source: ${addons.products[am310].sourceDir}/disruptor-3.4.2.jar
+        mapTos[1].destination: /lib/disruptor-3.4.2.jar
+        mapTos[2].source: ${addons.products[am310].sourceDir}/deployment.toml 
+        mapTos[2].destination: /repository/conf/deployment.toml
+        mapTos[3].source: ${addons.products[am310].sourceDir}/log4j2.properties
+        mapTos[3].destination: /repository/conf/log4j2.properties
+        mapTos[4].source: ${addons.products[am310].sourceDir}/default_api_template.xml
+        mapTos[4].destination: /repository/resources/api_templates/default_api_template.xml
+        mapTos[5].source: ${addons.products[am310].sourceDir}/mssql-jdbc-6.1.0.jre7.jar
+        mapTos[5].destination: /repository/components/lib/mssql-jdbc-6.1.0.jre7.jar
+        mapTos[6].source: C:\Users\thminh_1\Workspace\Library\WSO2\wso2am-3.1.0\repository\deployment\server\synapse-configs\default
+        mapTos[6].destination: /repository/deployment/server/synapse-configs/default
+        
+    products[ei650]:
+        zipName: wso2ei-6.5.0
+        sourceDir: C:\Users\thminh_1\Workspace\Library\WSO2\wso2ei-6.5.0
+        mapTos[0].source: ${addons.products[ei650].sourceDir}/bin/integrator.bat
+        mapTos[0].destination: /bin/integrator.bat
+        mapTos[1].source: ${addons.products[ei650].sourceDir}/conf
+        mapTos[1].destination: /conf
+        mapTos[2].source: ${addons.products[ei650].sourceDir}/log4j2.properties
+        mapTos[2].destination: /repository/conf/log4j2.properties
+        mapTos[3].source: ${addons.products[ei650].sourceDir}/bin/mssql-jdbc-8.2.0.jre8.jar
+        mapTos[3].destination: /repository/components/lib/mssql-jdbc-8.2.0.jre8.jar
+        
+    products[is570]:
+        zipName: wso2is-km-5.7.0
+        sourceDir: C:\Users\thminh_1\Workspace\Library\WSO2\wso2is-km-5.7.0
+        mapTos[0].source: ${addons.products[is570].sourceDir}/bin/wso2server.bat
+        mapTos[0].destination: /bin/wso2server.bat
+        mapTos[1].source: ${addons.products[is570].sourceDir}/repository/conf/datasources/master-datasources.xml
+        mapTos[1].destination: /repository/conf/datasources/master-datasources.xml
+        mapTos[2].source: ${addons.products[is570].sourceDir}/repository/conf/identity/identity.xml
+        mapTos[2].destination: /repository/conf/identity/identity.xml
+        mapTos[3].source: ${addons.products[is570].sourceDir}/repository/conf/tomcat/catalina-server.xml
+        mapTos[3].destination: /repository/conf/tomcat/catalina-server.xml
+        mapTos[4].source: ${addons.products[is570].sourceDir}/repository/conf/api-manager.xml
+        mapTos[4].destination: /repository/conf/api-manager.xml
+        mapTos[5].source: ${addons.products[is570].sourceDir}/repository/conf/carbon.xml
+        mapTos[5].destination: /repository/conf/carbon.xml
+        mapTos[6].source: ${addons.products[is570].sourceDir}/repository/conf/log4j.properties
+        mapTos[6].destination: /repository/conf/log4j.properties
+        mapTos[7].source: ${addons.products[is570].sourceDir}/repository/conf/registry.xml
+        mapTos[7].destination: /repository/conf/registry.xml
+        mapTos[8].source: ${addons.products[is570].sourceDir}/repository/conf/user-mgt.xml
+        mapTos[8].destination: /repository/conf/user-mgt.xml
+        mapTos[9].source: ${addons.products[is570].sourceDir}/repository/components/lib/mssql-jdbc-6.1.0.jre7.jar
+        mapTos[9].destination: /repository/components/lib/mssql-jdbc-6.1.0.jre7.jar
