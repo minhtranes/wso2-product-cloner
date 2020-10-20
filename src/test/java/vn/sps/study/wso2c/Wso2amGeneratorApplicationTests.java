@@ -1,4 +1,4 @@
-package vn.minhtran.study.wso2gen;
+package vn.sps.study.wso2c;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
