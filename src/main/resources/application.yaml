@@ -23,12 +23,20 @@ addons:
         sourceDir: C:\Users\thminh_1\Workspace\Library\WSO2\wso2ei-6.5.0
         mapTos[0].source: ${addons.products[ei650].sourceDir}/bin/integrator.bat
         mapTos[0].destination: /bin/integrator.bat
-        mapTos[1].source: ${addons.products[ei650].sourceDir}/conf
-        mapTos[1].destination: /conf
-        mapTos[2].source: ${addons.products[ei650].sourceDir}/log4j2.properties
-        mapTos[2].destination: /repository/conf/log4j2.properties
-        mapTos[3].source: ${addons.products[ei650].sourceDir}/bin/mssql-jdbc-8.2.0.jre8.jar
-        mapTos[3].destination: /repository/components/lib/mssql-jdbc-8.2.0.jre8.jar
+        mapTos[1].source: ${addons.products[ei650].sourceDir}/conf/carbon.xml
+        mapTos[1].destination: /conf/carbon.xml
+        mapTos[2].source: ${addons.products[ei650].sourceDir}/conf/log4j.properties
+        mapTos[2].destination: /conf/log4j.properties
+        mapTos[3].source: ${addons.products[ei650].sourceDir}/conf/datasources/master-datasources.xml
+        mapTos[3].destination: /conf/datasources/master-datasources.xml
+        mapTos[4].source: ${addons.products[ei650].sourceDir}/conf/registry.xml
+        mapTos[4].destination: /conf/registry.xml
+        mapTos[5].source: ${addons.products[ei650].sourceDir}/conf/synapse.properties
+        mapTos[5].destination: /conf/synapse.properties
+        mapTos[6].source: ${addons.products[ei650].sourceDir}/conf/identity/identity.xml
+        mapTos[6].destination: /conf/identity/identity.xml
+        mapTos[3].source: ${addons.products[ei650].sourceDir}/lib/mssql-jdbc-8.2.0.jre8.jar
+        mapTos[3].destination: /lib/mssql-jdbc-8.2.0.jre8.jar
         
     products[is570]:
         zipName: wso2is-km-5.7.0
